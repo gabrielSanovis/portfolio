@@ -185,6 +185,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all .8s;
+    z-index: 100;
 }
 
 .show-menu .sidebar {
@@ -314,4 +315,26 @@ header{
     object-fit: cover;
     width: 100%;
     
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anime="left"] {
+    transform:translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform:translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform:translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
