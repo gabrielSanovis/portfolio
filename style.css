@@ -174,7 +174,7 @@ header{
     animation: moveBanner .8s .8s forwards;
 }
 
-.banner button:hover{
+.banner  button:hover{
     padding: 1.1rem 2.6rem;
 }
 
@@ -319,7 +319,7 @@ header{
 
 [data-anime] {
     opacity: 0;
-    transition: .8s;
+    transition: .5s;
 }
 
 [data-anime="left"] {
@@ -330,11 +330,101 @@ header{
     transform:translate3d(50px, 0, 0);
 }
 
-[data-anime="bottom"] {
-    transform:translate3d(0, -50px, 0);
-}
-
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.sessao-projetos{
+    background-color: #f7f7f7;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
+
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0rem .3rem rgba(0, 0, 0, .6);
+}
+
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: filter .8s;
+}
+
+.card:hover img{
+    filter: blur(1px);
+    opacity: .5;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0rem;
+    padding: 2rem;
+    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .4);
+    color: #4b4b4b;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+}
+
+.card-info h3{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    color: #f5af19;
+    font-weight: 900;
+}
+
+.card-info p{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+.card-info button{
+    font-family: var(--font-action);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: .4rem;
+    width: 8rem;
+    height: 2.5rem;
+    box-shadow: .1rem .2rem 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-info button:hover{
+    width: 8.8rem;
+    height: 2.8rem;
 }

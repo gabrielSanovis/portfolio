@@ -25,7 +25,7 @@ const debounce = function(func, wait, immediate) {
 
 
 function animeScroll() {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 5) / 6)
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
     target.forEach(function(element) {
         if((windowTop) > element.offsetTop) {
             element.classList.add(animationClass)
@@ -41,6 +41,6 @@ if(target.length) {
     animeScroll()
     window.addEventListener('scroll', debounce(function() {
         animeScroll()
-    }, 100))
+    }, 400))
 }
 

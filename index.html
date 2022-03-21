@@ -22,7 +22,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
 
             <div class="img-wrapper">
                 <img src="img/backG.jpg" alt="Monitores e códigos">
@@ -40,9 +40,9 @@
         <aside class="sidebar">
             <nav role="navegation">
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link" lang="en">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link" lang="en">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
                 </ul>
@@ -54,8 +54,8 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
-            <div class="sessao-header" data-anime="bottom">
+        <section class="sessao-conhecimentos" id="conhecimentos">
+            <div class="sessao-header" data-anime="left">
                 <h1>Conhecimentos</h1>
             </div>
             <div class="conhecimentos">
@@ -95,8 +95,44 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est neque sunt error fuga ratione optio inventore suscipit, eaque doloremque quos recusandae non, quia omnis quas veritatis quidem sint, rem magnam!</p>
                     </div>
                 </div>
-                <div class="conhecimentos-img-wrapper" data-anime="bottom">
+                <div class="conhecimentos-img-wrapper" data-anime="left">
                     <img src="img/business-people.jpg" alt="Business People">
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-projetos" id="projetos">
+            <div class="sessao-header" data-anime="left">
+                <h1>Projetos</h1>
+            </div>
+
+            <div class="projetos">
+                <div class="card" data-anime="left">
+                    <div class="card-img-wrapper"><img src="img/site-wordpress.png" alt="Site"></div>
+                    <div class="card-info">
+                        <h2>Site do Desenvolvedor</h2>
+                        <h3>HTML5, CSS3, JS</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tempore praesentium voluptas, incidunt ducimus placeat ipsum corporis? Totam minus dolorem nesciunt perferendis magnam fugit maiores velit natus animi! In, vitae.</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="card" data-anime="left">
+                    <div class="card-img-wrapper"><img src="img/calculator-vector.jpg" alt="Calculadora"></div>
+                    <div class="card-info">
+                        <h2>Calculadora</h2>
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam asperiores blanditiis iure consectetur possimus? Debitis aperiam libero harum, recusandae quis obcaecati fuga, eaque, ab eius id quo voluptate similique.</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="card" data-anime="right">
+                    <div class="card-img-wrapper"><img src="img/formulario-login.png" alt="Tela de Login"></div>
+                    <div class="card-info">
+                        <h2>Tela de Login</h2>
+                        <h3>CSS3, HTML5, JS</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consectetur laudantium, quaerat dolore at autem reprehenderit sunt corrupti numquam, minima nobis deleniti repellendus explicabo et, repudiandae itaque modi repellat cumque.</p>
+                        <button>Saiba mais</button>
+                    </div>
                 </div>
             </div>
         </section>
