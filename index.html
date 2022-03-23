@@ -14,14 +14,14 @@
 <body>
 
     <div class="container">
-        
+        <!--MENU-->
         <div class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-
+        <!--HOMEPAGE-->
         <header id="home">
 
             <div class="img-wrapper">
@@ -32,32 +32,34 @@
                 <h1 lang="en">Web Developer & <br>
                 Front End Designer</h1>
                 <p>Gabriel Cauã Santos</p>
-                <button class="btn">Saiba mais</button>
+                <button class="btn btn-content">Saiba mais</button>
             </div>
 
         </header>
-
+        <!--NAVEGAÇÃO DO MENU-->
         <aside class="sidebar">
             <nav role="navegation">
                 <ul class="menu">
                     <li class="menu-item"><a href="#home" class="menu-link" lang="en">Home</a></li>
                     <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
+            
+            <div class="social-media" role="social media">
                 <a href="https://github.com/gabrielSanovis" rel="external"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gabriel-santos-9036ba204/" rel="external"><i class="fab fa-linkedin"></i></a>
                 <li><a href="https://www.instagram.com/vsgaab/" rel="external"><i class="fab fa-instagram-square"></i></a></li>
             </div>
         </aside>
-
+        <!--CONHECIMENTOSPAGE-->
         <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header" data-anime="left">
                 <h1>Conhecimentos</h1>
             </div>
+            
             <div class="conhecimentos">
                 <div class="conhecimento" data-anime="left">
                     <div class="conhecimento-header">
@@ -68,6 +70,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis distinctio architecto tempore? Optio voluptatem ullam debitis numquam quasi, reprehenderit modi molestias pariatur veniam, placeat esse ducimus. Eveniet quia beatae suscipit.</p>
                     </div>
                 </div>
+                
                 <div class="conhecimento" data-anime="right">
                     <div class="conhecimento-header">
                         <i class="fab fa-html5"></i>
@@ -77,6 +80,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium doloribus maxime corrupti libero inventore, sed doloremque. Rem necessitatibus odit sed fugiat, nisi reiciendis voluptatibus omnis velit ut ipsa blanditiis mollitia.</p>
                     </div>
                 </div>
+                
                 <div class="conhecimento" data-anime="left">
                     <div class="conhecimento-header">
                         <i class="fab fa-css3-alt"></i>
@@ -86,6 +90,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis distinctio architecto tempore? Optio voluptatem ullam debitis numquam quasi, reprehenderit modi molestias pariatur veniam, placeat esse ducimus. Eveniet quia beatae suscipit.</p>
                     </div>
                 </div>
+                
                 <div class="conhecimento" data-anime="right">
                     <div class="conhecimento-header">
                         <i class="fas fa-pencil-alt"></i>
@@ -95,18 +100,20 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est neque sunt error fuga ratione optio inventore suscipit, eaque doloremque quos recusandae non, quia omnis quas veritatis quidem sint, rem magnam!</p>
                     </div>
                 </div>
+                
                 <div class="conhecimentos-img-wrapper" data-anime="left">
                     <img src="img/business-people.jpg" alt="Business People">
                 </div>
             </div>
         </section>
-
+        <!--PROJETOS PAGE-->
         <section class="sessao-projetos" id="projetos">
             <div class="sessao-header" data-anime="left">
                 <h1>Projetos</h1>
             </div>
 
             <div class="projetos">
+                
                 <div class="card" data-anime="left">
                     <div class="card-img-wrapper"><img src="img/site-wordpress.png" alt="Site"></div>
                     <div class="card-info">
@@ -116,6 +123,7 @@
                         <button class="btn">Saiba mais</button>
                     </div>
                 </div>
+                
                 <div class="card" data-anime="left">
                     <div class="card-img-wrapper"><img src="img/calculator-vector.jpg" alt="Calculadora"></div>
                     <div class="card-info">
@@ -125,6 +133,7 @@
                         <button class="btn">Saiba mais</button>
                     </div>
                 </div>
+                
                 <div class="card" data-anime="right">
                     <div class="card-img-wrapper"><img src="img/formulario-login.png" alt="Tela de Login"></div>
                     <div class="card-info">
@@ -136,10 +145,9 @@
                 </div>
             </div>
         </section>
-
-        <section class="sessao-contato">
+        <!--CONTATO PAGE-->
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper" data-anime="left">
-
                 <div class="contato-left">
 
                 </div>
@@ -151,46 +159,89 @@
                             <input type="text" class="field" id="nome" required>
                             <label for="nome" class="field-label">Nome</label>
                         </div>
+                       
                         <div class="input-group">
                             <input type="text" class="field" id="e-mail" required>
                             <label for="e-mail" class="field-label">E-mail</label>
                         </div>
+                       
                         <div class="input-group">
                             <textarea class="field" id="mensagem" required></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
+                       
                         <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
                 
             </div>
         </section>
-        
-        <section class="sessao-orcamento">
+        <!--ORÇAMENTO PAGE-->
+        <section class="sessao-orcamento" id="orcamento">
+            
             <div class="orcamento-wrapper" data-anime="left">
                 <h1>Faça um orçamento</h1>
+                
                 <form>
                     <label for="qtde">Qtde de Páginas</label>
                     <input type="number" min="1" name="qtde" id="qtde">
+                    
                     <label for="js">Preciso de um script JS</label>
                     <input type="checkbox" name="js" id="js">
+                    
                     <label>Layout</label>
                     <div class="group-layout">
                         <div>
                             <input type="radio" name="layout" id="layout-sim">
                             <label for="layout-sim">Preciso de um layout</label>
                         </div>
+                        
                         <div>
                             <input type="radio" name="layout" id="layout-nao">
                             <label for="layout-nao">Já tenho um Layout</label>
                         </div>
                     </div>
+                    
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" min="1" max="10" value="1" name="prazo" id="prazo" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value=""></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    
+                    <label id="preco">R$ 0,00</label>
                     <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-content">
+                <p><small>Copyright&copy; 2022, Gabriel Santos - todos direitos reservados</small>.</p>
+                
+                <div class="social-list" role="social media">
+                    <ul> 
+                        <li><a href="https://github.com/gabrielSanovis" rel="external"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/gabriel-santos-9036ba204/" rel="external"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/vsgaab/" rel="external"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </footer>
+        <!--FISH-UP-->
+        <a href="#home" id="link-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
 </body>

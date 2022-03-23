@@ -15,6 +15,13 @@
     --font-action: "Muli", serif;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
+/*---MENU---*/
+
 .hamburguer{
     width: 2.5rem;
     height: 2.5rem;
@@ -84,6 +91,8 @@
 .show-menu #line3 {
     transform: rotate(45deg) translate(-.5rem, -.5rem);
 }
+
+/*---HOMEPAGE---*/
 
 header{
     width: 100%;
@@ -182,6 +191,8 @@ header{
     padding: 1.1rem 2.6rem;
 }
 
+/*---NAVEGAÇÃO DO MENU---*/
+
 .sidebar {
     width: 20rem;
     height: 100vh;
@@ -242,6 +253,8 @@ header{
 .social-media i:hover{
     color: #f12711;
 }
+
+/*---CONHECIMENTOS PAGE---*/
 
 .sessao-conhecimentos{
     background-color: #f7f7f7;
@@ -327,17 +340,19 @@ header{
 }
 
 [data-anime="left"] {
-    transform:translate3d(-50px, 0, 0);
+    transform:translate3d(-25px, 0, 0);
 }
 
 [data-anime="right"] {
-    transform:translate3d(50px, 0, 0);
+    transform:translate3d(25px, 0, 0);
 }
 
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+
+/*---PROJETOS PAGE---*/
 
 .sessao-projetos{
     background-color: #f7f7f7;
@@ -422,12 +437,14 @@ header{
     font-size: 1.2rem;
     width: 8rem;
     height: 2.5rem;
+    transition: transform .8s;
 }
 
 .card-info button:hover{
-    width: 8.8rem;
-    height: 2.8rem;
+    transform: scale(1.05);
 }
+
+/*---CONTATO PAGE---*/
 
 .sessao-contato{
     width: 100%;
@@ -523,7 +540,14 @@ header{
     font-size: 1.2rem;
     width: 100%;
     height: 2.5rem;
+    transition: transform .8s;
 }
+
+.btn-submit:hover{
+    transform: scale(1.05);
+}
+
+/*---ORÇAMENTO PAGE---*/
 
 .sessao-orcamento{
     width: 100%;
@@ -588,8 +612,75 @@ header{
     width: 100%;
     height: 3rem;
     grid-column: 2;
+    transition: transform .5s;
 }
 
 .btn-orcamento:hover{
-    height: 3.3rem;
+    transform: scale(1.05);
+}
+
+/* --FOOTER-- */
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-content p{
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    font-size: 1.7rem;
+    color: #eee;
+}
+
+.social-list i{
+    transition: color 0.5s;
+}
+
+.social-list i:hover{
+    color: #f5af19;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+/* ---FISH-UP---*/
+
+#link-top{
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .8s;
+}
+
+#link-top:hover {
+    transform: scale(1.1);
 }
