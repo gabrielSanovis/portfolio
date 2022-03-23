@@ -1,16 +1,10 @@
 /*ANIMAÇÃO DA PÁGINA*/ 
 
-const debounce = function(func, wait, immediate) {
-var hamburguer = document.querySelector(".hamburguer");
-
-hamburguer.addEventListener("click", ()=>
-document.querySelector(".container").classList.toggle("show-menu")
-);
-
 const target = document.querySelectorAll("[data-anime]")
 const animationClass = 'animate'
 
-
+const debounce = function(func, wait, immediate) {
+    
     let timeout
     return function(...args) {
         const context = this
@@ -45,7 +39,12 @@ if(target.length) {
     }, 400))
 }
 
-/*PARTE QUE CALCULA O ORÇAMENTO (É PARTE DO ORÇAMENTO-PAGE) */
+var hamburguer = document.querySelector(".hamburguer");
+hamburguer.addEventListener("click", ()=>
+document.querySelector(".container").classList.toggle("show-menu")
+);
+
+/*PARTE QUE CALCULA O ORÇAMENTO (É PARTE DO ORÇAMENTO PAGE) */
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco)
 document.querySelector("#js").addEventListener("change", atualizarPreco)
