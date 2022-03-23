@@ -757,3 +757,61 @@ footer{
         margin: 3rem;
     }
 }
+
+@media (min-width: 280px) and (max-width: 767px) {
+    
+    
+    section .conhecimentos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+
+    section .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section .contato-wrapper{
+        justify-content: center;
+    }
+
+    div .card{
+        margin-bottom: 2rem;
+    }
+
+    div .contato-right{
+        width: 100%;
+    }
+
+    div .contato-left{
+        width: 0%;
+    }
+
+    section .orcamento-wrapper{
+        width: 95%;
+    }
+
+    section .orcamento-wrapper h1{
+        padding: .2rem;
+    }
+
+    div .sessao-orcamento form {
+        margin: 2rem;
+        display: flex;
+        /* grid-template-columns: auto 1fr; */
+        column-gap: 1rem;
+        row-gap: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div .social-list ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
